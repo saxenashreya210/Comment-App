@@ -1,0 +1,93 @@
+.picsum-img-wrapper {
+  width:100%; 
+  height: 70vh; 
+  overflow: visible;
+}
+
+
+ngb-carousel img {
+  width: 100%;
+  outline: none;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+.carousel-item {
+  display: flex !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.2s ease-in-out, visibility 1.2s;
+  z-index: -1;
+}
+.carousel-item.active{
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.carousel-control-prev {
+   z-index: 20;
+}
+
+.carousel-control-next {
+   z-index: 20;
+}
+.carousel-indicators{
+  z-index: 20;
+}
+
+.card{
+  height: 225px;
+  width: 300px;
+  margin-top: 45px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card-title{
+  line-height: 2;
+    font-size: 20px;
+}
+.card-img-top{
+  height: 25vh;
+  object-fit: cover;
+  border-top-left-radius: 21px;
+    border-top-right-radius: 20px;
+}
+.collect-card{
+  height: 280px;
+  width: 230px;
+  margin-top: 45px;
+  text-align: center;
+  border-radius: 20px;
+ 
+}
+.col-card-img-top{
+  height: 280px;
+  width: 230px;
+  object-fit: cover;
+  border-radius: 20px;
+    
+}
+.col-card-text{
+  color: white;
+  margin-top: -50px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  padding: 8px;
+  text-shadow: 2px 2px black;
+  
+}
+.search{
+  width: 50%;
+    margin-left: 27%;
+    margin-top: -115px;
+    position: relative;
+}
+.btn{
+  color: white;
+    border-color: #f8f9fa;
+    background-color: black;
+    font-weight: 700;
+}
